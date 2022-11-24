@@ -9,6 +9,7 @@ public class Jugador {
     private String posicion;
     private String equipo;
 
+
     public Jugador() {
     }
 
@@ -33,12 +34,7 @@ public class Jugador {
     }
 
     public void setEdad(int edad) {
-        if (edad<18){
-            System.out.println("edad invalida");
-        }else {
-            this.edad=edad;
-        }
-
+        this.edad = edad;
     }
 
     public int getNumeroCamisa() {
@@ -64,4 +60,9 @@ public class Jugador {
     public void setEquipo(String equipo) {
         this.equipo = equipo;
     }
+
+    public String toString(){
+        return "\n"+ numeroCamisa +" "+ nombre +" "+ apellidos +" "+ edad +" "+ posicion +" "+ equipo;
+    }
 }
+
